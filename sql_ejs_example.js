@@ -11,15 +11,16 @@ var connection = mysql.createConnection({
     user: 'group6',
     password: 'untanglingGroup6',
     database: 'group6'
-});
+
 connection.connect();
 
-var employees;
+var listings;
 
 connection.query('SELECT * FROM Training_Manuals', function(err, rows, fields) {
+
     if (err) throw err;
 
-    employees = rows;
+    listings = rows;
     console.log(rows[0]);
 });
 
@@ -27,9 +28,8 @@ connection.end();
 
 app.get('/', function(req, res) {
 
-
     res.render('simple1', {Transportation })
-})
+=
 
 // about page 
 app.get('/about', function(req, res) {
