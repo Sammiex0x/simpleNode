@@ -8,15 +8,15 @@ app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
 var connection = mysql.createConnection({
     host: '206.12.96.242',
-    user: 'group0',
-    password: 'untanglingGroup0',
-    database: 'testDB'
+    user: 'group6',
+    password: 'untanglingGroup6',
+    database: 'group6'
 });
 connection.connect();
 
 var employees;
 
-connection.query('SELECT * FROM employees', function(err, rows, fields) {
+connection.query('SELECT * FROM Training_Manuals', function(err, rows, fields) {
     if (err) throw err;
 
     employees = rows;
@@ -28,16 +28,16 @@ connection.end();
 app.get('/', function(req, res) {
 
 
-    res.render('simple1', { employees: employees })
+    res.render('simple1', {Transportation })
 })
 
 // about page 
 app.get('/about', function(req, res) {
     var sentence = "this is a test about page, passed as a variable through ejs";
     var drinks = [
-        { name: 'Bloody Mary', drunkness: 3 },
-        { name: 'Martini', drunkness: 5 },
-        { name: 'Scotch', drunkness: 10 }
+        { name: 'bus' },
+        { name: 'walking'},
+        { name: 'parents driving' }
     ];
     res.render('about', {
         drinks: drinks,
@@ -45,6 +45,6 @@ app.get('/about', function(req, res) {
     });
 });
 
-app.listen(8000, function() {
+app.listen(8006, function() {
     console.log('Example app listening on port 8000!')
 })
