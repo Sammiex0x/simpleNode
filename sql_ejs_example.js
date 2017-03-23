@@ -28,7 +28,7 @@ connection.end();
 app.get('/', function(req, res) {
 
 
-    res.render('simple1', {employees})
+    res.render('simple1', {employees: employees})
 })
 
 // about page 
@@ -39,7 +39,7 @@ app.get('/about', function(req, res) {
         { name: 'walking'},
         { name: 'parents driving'}
     ];
-    res.render('about', {
+    res.render('about', { 
         Training: Transportation,
         sentence: sentence
     });
