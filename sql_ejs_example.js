@@ -37,7 +37,7 @@ app.get('/about', function(req, res) {
     var drinks = [
         { name: 'bus' },
         { name: 'walking'},
-        { name: 'parents driving' }
+        { name: 'parents driving'}
     ];
     res.render('about', {
         Training: Transportation,
