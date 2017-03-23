@@ -35,12 +35,12 @@ app.get('/', function(req, res) {
 app.get('/about', function(req, res) {
     var sentence = "this is a test about page, passed as a variable through ejs";
     var drinks = [
-        { name: 'Bloody Mary', drunkness,3 },
-        { name: 'Martini', drunkness, 5},
-        { name: 'Scotch', drunkness 10'}
+        { name: 'Bloody Mary', drunkness: 3 },
+        { name: 'Martini', drunkness: 5 },
+        { name: 'Scotch', drunkness: 10 },
     ];
     res.render('about', { 
-        emplpoyees: employees
+        emplpoyees: employees,
         sentence: sentence
     });
 });
