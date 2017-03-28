@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="example.css">
     <% include head %>
 </head>
 <body class="container">
@@ -11,17 +15,17 @@
     </header>
 
     <main>
-        <div class="jumbotron">
+        <div class="Teenwork">
             <h1>dynamic query example</h1>
             <p>construct and call a MySQL query</p>
         </div>
         <form action="/query" method="post">
             <h2>Query<h2>
-            <label for="queryStr">Enter a location</label>
+            <label for="queryStr">Enter Category </label>
             <input id="queryStr" type="text" name="queryStr" placeholder="enter name">
-            <button id="execute" type="submit">run query</button>
+            <button id="execute" type="submit">Find</button>
         </form>
-
+ 
         <h2>Results</h2>
         <ul>
             <% listings.forEach(function(item) { %>
