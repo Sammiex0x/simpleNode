@@ -1,8 +1,11 @@
+body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;      
+        background: lightblue;
+        font color: bold;
+}
 
-.test3 {
-    color: #0000ff;
-    font-style: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 150%;
-      font-size: 50px;   
-     }
+test {
+    color: blue;
+}
+
+

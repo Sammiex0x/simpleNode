@@ -1,6 +1,7 @@
 var express = require('express');
 var mysql = require('mysql');
 var app = express();
+ <link rel="stylesheet" type="text/css" href="example.css">
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
