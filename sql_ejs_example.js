@@ -1,7 +1,7 @@
 var express = require('express');
 var mysql = require('mysql');
 var app = express();
- <link rel="stylesheet" type="text/css" href="example.css">
+ <link rel="stylesheet" type="text/css" href="example.css"> </link>
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -48,4 +48,4 @@ app.get('/about', function(req, res) {
 
 app.listen(8006, function() {
     console.log('Example app listening on port 8006!')
-})
+});

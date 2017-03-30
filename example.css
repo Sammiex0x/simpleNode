@@ -1,7 +1,7 @@
 body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;      
         background: lightblue;
-        font color: bold;
+        font: color: bold;
 }
 
 .test {
